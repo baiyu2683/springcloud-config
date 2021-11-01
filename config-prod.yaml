@@ -1,0 +1,18 @@
+server:
+  port: 3355
+
+spring:
+  application:
+    name: cloud-config-client-prod
+  cloud:
+    config:
+      label: main   # 分支名称
+      name: application   # 配置文件名称
+      profile: dev   # 后缀名称
+      uri: http://localhost:3344  # 配置中心地址
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url: http://localhost:7001/eureka,http://localhost:7002/eureka
