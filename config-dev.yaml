@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cloud-config-client-dev
+    name: cloud-config-client-dev-refresh
   cloud:
     config:
       label: main   # 分支名称
