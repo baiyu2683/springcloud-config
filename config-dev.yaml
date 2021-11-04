@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cloud-config-client-dev-refresh
+    name: cloud-config-client-dev-refresh-config-client3355
   cloud:
     config:
       label: main   # 分支名称
