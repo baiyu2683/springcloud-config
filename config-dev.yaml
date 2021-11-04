@@ -1,9 +1,6 @@
-server:
-  port: 3356
-
 spring:
   application:
-    name: cloud-config-client-dev-refresh
+    name: cloud-config-client-dev
   cloud:
     config:
       label: main   # 分支名称
